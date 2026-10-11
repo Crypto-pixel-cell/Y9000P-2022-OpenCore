@@ -1,0 +1,15 @@
+.DS_Store
+Thumbs.db
+*.log
+opencore-*.txt
+panic-*.txt
+SysReport/
+**/config.plist.*
+**/*.bak
+**/*.backup
+**/EFI-before*/
+**/私人备份*/
+EFI/OC/Kexts/IOSkywalkFamily.kext/
+EFI/OC/Kexts/IO80211FamilyLegacy.kext/
+EFI/OC/Kexts/AirportItlwm_Sequoia.kext/
+._*

@@ -1,0 +1,2 @@
+# Preserve every byte, including signed kext resources and checksum manifests.
+* -text

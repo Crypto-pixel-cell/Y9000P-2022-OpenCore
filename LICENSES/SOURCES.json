@@ -1,0 +1,72 @@
+[
+  {
+    "component": "OpenCore",
+    "url": "https://raw.githubusercontent.com/acidanthera/OpenCorePkg/1.0.8/LICENSE.txt",
+    "status": "collected"
+  },
+  {
+    "component": "OcBinaryData",
+    "status": "not_found",
+    "source": "https://github.com/acidanthera/OcBinaryData"
+  },
+  {
+    "component": "Lilu",
+    "url": "https://raw.githubusercontent.com/acidanthera/Lilu/master/LICENSE.txt",
+    "status": "collected"
+  },
+  {
+    "component": "CpuTscSync",
+    "url": "https://raw.githubusercontent.com/acidanthera/CpuTscSync/master/LICENSE",
+    "status": "collected"
+  },
+  {
+    "component": "VirtualSMC",
+    "url": "https://raw.githubusercontent.com/acidanthera/VirtualSMC/master/LICENSE.txt",
+    "status": "collected"
+  },
+  {
+    "component": "YogaSMC",
+    "url": "https://raw.githubusercontent.com/zhen-zen/YogaSMC/master/LICENSE",
+    "status": "collected"
+  },
+  {
+    "component": "WhateverGreen",
+    "url": "https://raw.githubusercontent.com/acidanthera/WhateverGreen/master/LICENSE.txt",
+    "status": "collected"
+  },
+  {
+    "component": "AppleALC",
+    "url": "https://raw.githubusercontent.com/acidanthera/AppleALC/master/LICENSE.txt",
+    "status": "collected"
+  },
+  {
+    "component": "RealtekRTL8111",
+    "status": "not_found",
+    "source": "https://github.com/Mieze/RTL8111_driver_for_OS_X"
+  },
+  {
+    "component": "USBInjectAll",
+    "status": "not_found",
+    "source": "https://github.com/RehabMan/OS-X-USB-Inject-All"
+  },
+  {
+    "component": "VoodooPS2",
+    "status": "not_found",
+    "source": "https://github.com/acidanthera/VoodooPS2"
+  },
+  {
+    "component": "BrightnessKeys",
+    "url": "https://raw.githubusercontent.com/acidanthera/BrightnessKeys/master/LICENSE",
+    "status": "collected"
+  },
+  {
+    "component": "VoodooI2C",
+    "url": "https://raw.githubusercontent.com/VoodooI2C/VoodooI2C/master/LICENSE.txt",
+    "status": "collected"
+  },
+  {
+    "component": "Yaru",
+    "url": "https://raw.githubusercontent.com/ubuntu/yaru/master/COPYING",
+    "status": "collected"
+  }
+]

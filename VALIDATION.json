@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-11",
+  "opencore_version": "1.0.8",
+  "private_identifiers_scrubbed": true,
+  "original_active_kexts_preserved": true,
+  "enabled_kext_and_acpi_paths_checked": true,
+  "private_and_public_ocvalidate": "passed",
+  "internal_configuration_deployed": true,
+  "boot_test": "Original machine boots macOS normally from internal disk, user-confirmed. Sanitized public configuration not boot-tested on another machine; quiet-boot visual confirmation not separately recorded.",
+  "removed_disabled_variants": [
+    "AirportItlwm_Sequoia.kext",
+    "IO80211FamilyLegacy.kext",
+    "IOSkywalkFamily.kext"
+  ],
+  "official_release": {
+    "name": "OpenCore-1.0.8-RELEASE.zip",
+    "url": "https://github.com/acidanthera/OpenCorePkg/releases/download/1.0.8/OpenCore-1.0.8-RELEASE.zip",
+    "digest": "sha256:2011e8b7216ecb2645d97ea710df965947edd406846e92050b9bc4190be6d27b",
+    "tag": "1.0.8"
+  },
+  "private_backup_excluded": true,
+  "licenses_collected": 13,
+  "license_sources_unresolved": [
+    "OcBinaryData",
+    "RealtekRTL8111",
+    "USBInjectAll",
+    "VoodooPS2"
+  ],
+  "sleep_wake": "Known failure: wake restores lights/fans, internal screen remains black. Root cause unconfirmed.",
+  "display_sleep_test": "Screen stayed lit with stalled pointer; keyboard/mouse input restored it.",
+  "system_sleep_test": "Screen off; power button restored LEDs, display stayed black; keyboard/mouse could not wake it.",
+  "sleep_wake_log_validation": {
+    "commands": "8/8 exit 0",
+    "system_resume": "recorded in both observed sleep cycles",
+    "gpu_failure": "Xid 79 immediately after first wake; absent in second captured cycle",
+    "underlying_cause": "unconfirmed",
+    "four_kernel_driver_hashes": "match 1.9.0 package manifest",
+    "raw_logs_in_public_release": false,
+    "capture_driver_version": "1.9.0; these logs predate the 1.13.0 upgrade"
+  },
+  "graphics_driver": {
+    "version": "1.13.0",
+    "source": "https://github.com/nullmoth/nvidia-macos-driver/releases/tag/v1.13.0",
+    "bundled_in_efi": false,
+    "refresh_rate": "Internal panel 165 Hz works, user-confirmed 2026-10-11",
+    "sleep_wake": "Still fails after upgrade, user-confirmed 2026-10-11",
+    "installation_log": "USB installation SUCCESS record confirms 1.13.0 completed; subsequent normal boot and 165 Hz confirmed by user."
+  },
+  "appledouble_metadata_removed": 31
+}
