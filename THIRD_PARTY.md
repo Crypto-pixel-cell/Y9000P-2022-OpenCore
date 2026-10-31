@@ -13,7 +13,7 @@
 | YogaSMC | https://github.com/zhen-zen/YogaSMC |
 | WhateverGreen | https://github.com/acidanthera/WhateverGreen |
 | AppleALC | https://github.com/acidanthera/AppleALC |
-| AMFIPass、未启用的遗留 Apple 网络组件 | https://github.com/dortania/OpenCore-Legacy-Patcher |
+| AMFIPass | https://github.com/dortania/OpenCore-Legacy-Patcher |
 | RealtekRTL8111 | https://github.com/Mieze/RTL8111_driver_for_OS_X |
 | USBInjectAll / XHCI-unsupported | https://github.com/RehabMan/OS-X-USB-Inject-All |
 | IntelBluetoothFirmware / IntelBTPatcher | https://github.com/OpenIntelWireless/IntelBluetoothFirmware |
@@ -27,6 +27,14 @@
 
 `COMPONENTS.md` 列出实际二进制声明的版本，`SHA256SUMS` 标识具体文件。原 EFI 基于已有 Alder Lake 笔记本配置整理；部分原始二进制的构建提交、ACPI 作者及生成器版本没有可靠记录，不将上表当前源码冒充与所有二进制逐字对应的源码快照。
 
-`LICENSES/` 保存可获取的原始许可证文本；各组件还可能附带其他版权声明。上游源码、构建说明与版本发布可从相应链接获取。遗留 Apple 网络组件保持未启用；上传压缩包中排除这些备用二进制，公开仓库的 .gitignore 也排除它们。
+`LICENSES/` 保存可获取的原始许可证文本；各组件还可能附带其他版权声明。上游源码、构建说明与版本发布可从相应链接获取。未启用的遗留网络组件与 itlwm 备用驱动已从公开包及配置列表排除。
 
 Ubuntu 图标由 Yaru 的 `start-here.png` 缩放为 128 / 256 像素，再封装为 ICNS，未改变图形。图标遵循 Yaru 原许可（CC BY-SA 4.0）；Ubuntu 名称和标志仍属相应权利人。OpenCanopy 修改的 Ubuntu 文本标签由本项目生成，其余资源来自 Acidanthera。
+
+## 2026-10-31 新增组件
+
+- SimpleHDA：https://github.com/laobamac/SimpleHDA 。当前 EFI 声明 1.0.0；上游保留作者版权，本项目不另授予许可。当前构建对应提交和单独许可文本未核实。
+- RestrictEvents：https://github.com/acidanthera/RestrictEvents/tree/1.1.6 ，BSD-3-Clause 许可见 `LICENSES/RestrictEvents.txt`。
+- NativeTahoe：https://github.com/laobamac/itlwm ，与 NativeSequoia 同一适配项目；具体本地构建提交未知，以文件哈希为准。
+- NullMothSafe 工具：https://github.com/nullmoth/nvidia-macos-driver 。系统级 NVIDIA 驱动仍不在本包内。
+- SSDT-NBCI 等 ACPI 表来自当前内置 EFI；不将未记录的构建作者或提交冒充已验证来源。

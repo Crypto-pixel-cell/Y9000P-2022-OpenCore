@@ -13,3 +13,9 @@ EFI/OC/Kexts/IOSkywalkFamily.kext/
 EFI/OC/Kexts/IO80211FamilyLegacy.kext/
 EFI/OC/Kexts/AirportItlwm_Sequoia.kext/
 ._*
+
+**/config.before*.plist
+**/config*.plist.before*
+**/config*.plist.nullmoth-*
+FSCK*.???
+EFI/OC/Kexts/itlwm.kext/

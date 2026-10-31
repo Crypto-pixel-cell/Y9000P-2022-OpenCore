@@ -68,5 +68,15 @@
     "component": "Yaru",
     "url": "https://raw.githubusercontent.com/ubuntu/yaru/master/COPYING",
     "status": "collected"
+  },
+  {
+    "component": "RestrictEvents",
+    "url": "https://raw.githubusercontent.com/acidanthera/RestrictEvents/1.1.6/LICENSE.txt",
+    "status": "collected"
+  },
+  {
+    "component": "SimpleHDA",
+    "source": "https://github.com/laobamac/SimpleHDA",
+    "status": "upstream copyright retained; standalone license not found; exact build commit not recorded"
   }
 ]
